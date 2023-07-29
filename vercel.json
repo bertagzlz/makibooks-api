@@ -11,7 +11,8 @@
     },
     {
       "src": "/",
-      "dest": "/api/index.php"
+      "dest": "/api/index.php",
+      "continue": true
     },
     {
       "src": "/tutorial",
@@ -19,10 +20,6 @@
     },
     {
       "src": "/public/(.*)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/app/(.*)",
       "dest": "/$1"
     }
   ]
