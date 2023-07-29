@@ -1,7 +1,8 @@
 <?php
 $path = dirname(__DIR__);
-require $path."/vendor/autoload.php";
-
+//require $path."/vendor/autoload.php";
+require '/var/task/user/api/app/public/php/vendor/autoload.php';
+//https://makibooks-api.vercel.app/api/app/public/php
 use Firebase\JWT\JWT;
 
 class JwtHandler
