@@ -1,5 +1,6 @@
 <?php
-require dirname(__DIR__)."/vendor/autoload.php";
+$path = dirname(__DIR__);
+require $path."/vendor/autoload.php";
 
 use Firebase\JWT\JWT;
 
