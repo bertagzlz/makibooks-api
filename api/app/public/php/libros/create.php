@@ -22,7 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') :
     exit;
 endif;
 
-require '../classes/Database.php';
+require dirname(__DIR__)."/classes/Database.php";
+//require '../classes/Database.php';
+
 $database = new Database();
 $conn = $database->dbConnection();
  
