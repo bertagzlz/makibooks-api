@@ -9,10 +9,10 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 //require __DIR__ . '../classes/JwtHandler.php';
 //require '../classes/Database.php';
 //require '../classes/JwtHandler.php';
-$path = __DIR__ . "../classes/";
-require $path."Database.php";
+$path = dirname(__DIR__);
+require $path."/classes/Database.php";
 // require __DIR__ . '../classes/JwtHandler.php';
-require $path."JwtHandler.php";
+require $path."/classes/JwtHandler.php";
 
 function msg($success,$status,$message,$extra = []){
     return array_merge([
