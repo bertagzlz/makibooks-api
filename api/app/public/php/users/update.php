@@ -22,7 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'PUT') :
     exit;
 endif;
 
-require '../classes/Database.php';
+//require '../classes/Database.php';
+require dirname(__DIR__).'/classes/Database.php';
 $database = new Database();
 $conn = $database->dbConnection();
 
