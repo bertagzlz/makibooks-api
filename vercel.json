@@ -21,6 +21,10 @@
     {
       "src": "/public/(.*)",
       "dest": "/$1"
+    },
+    {
+      "src": "/api/app/public/**",
+      "dest": "/$1"
     }
   ]
 }
