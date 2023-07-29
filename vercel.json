@@ -23,7 +23,7 @@
       "dest": "/$1"
     },
     {
-      "src": "/api/app/public/**",
+      "src": "/api/app/public/**/(*.*)",
       "dest": "/$1"
     }
   ]
