@@ -13,8 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') :
     ]);
     exit;
 endif;
-require dirname(__DIR__)."/classes/Database.php";
-//require '../classes/Database.php';
+
+$path = dirname(__DIR__);
+require $path."/classes/Database.php";
 $database = new Database();
 $conn = $database->dbConnection();
 $id = null;
